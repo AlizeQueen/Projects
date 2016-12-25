@@ -1,0 +1,190 @@
+<html>
+<head>
+    <title>Викторина</title>
+    <meta charset="windows-1251" />
+    <link rel="shortcut icon" href="C:\Users\Ваня\Desktop\Austria/aus.ico" type="image/x-icon" />
+</head>
+<body>
+    <style>
+        h1 {
+            text-align: center;
+            color: black;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Times New Roman',serif;
+            transition: .5s linear;
+        }
+
+        i {
+            margin-right: 10px;
+        }
+
+        nav {
+            display: block;
+            width: 100%;
+            margin: 0 auto 0px;
+        }
+
+        .one ul {
+            padding: 1em 0;
+            background: red;
+            padding-left: 34%;
+        }
+
+        .one a {
+            padding: 1em;
+            background: rgba(220, 20, 0, .4);
+            border-right: 1px solid black;
+            color: black;
+        }
+
+            .one a:hover {
+                background: white;
+            }
+
+        .one li {
+            display: inline;
+            padding-right: 1%;
+        }
+    </style>
+    <script>
+ q3elem = document.getElementById("q1"); if (q3elem.checked) { alert("!") } else { alert("1") } ;
+        q3e=document.getElementById('q3');answer = q3e.value;alert("Die"+answer+"!!!")}
+    </script>
+    <h1>Викторина</h1>
+    <nav class="one">
+        <ul>
+            <li>
+                <a href="Index.html">Главная</a>
+            </li>
+            <li>
+                <a href="Map.html">Карта</a>
+            </li>
+            <li>
+                <a href="Info.Html">Информация</a>
+            </li>
+            <li>
+                <a href="Test.html">Викторина</a>
+            </li>
+        </ul>
+    </nav>
+    <script type="text/javascript" language="JavaScript">
+        var res="212";
+        function check_me()
+        {
+            var count=0;
+            with(document.test) {
+                if (!Q1[0].checked&&!Q1[1].checked&&!Q1[2].checked&&!Q1[3].checked)
+                {count+=1};
+                if (!Q2[0].checked&&!Q2[1].checked&&!Q2[2].checked&&!Q2[3].checked)
+                {count+=1};
+                if (!Q3[0].checked&&!Q3[1].checked&&!Q3[2].checked&&!Q3[3].checked)
+                {count+=1};
+                if (count>0) alert("Вы выполнили не все задания. Проверьте себя!")
+                else answer();
+            }
+        }
+
+        function control(k, f1,f2,f3) {
+            if (k==1&&f1.checked) return true;
+            if (k==2&&f2.checked) return true;
+            if (k==3&&f3.checked) return true;
+            return false;
+        }
+
+        function answer() {
+            answ="";
+            with(document)    {
+                answ+=control(res.charAt(0) ,test.Q1[0],test.Q1[1],test.Q1[2],test.Q1[3])?"1":"0";
+                answ+=control(res.charAt(1) ,test.Q2[0],test.Q2[1],test.Q2[2],test.Q2[3])?"1":"0";
+                answ+=control(res.charAt(2) ,test.Q3[0],test.Q3[1],test.Q3[2],test.Q3[3])?"1":"0";
+
+                showResult();
+            }
+        }
+
+        function showResult()   {
+            var nok=0;
+            var i,s;
+
+            for (i=0; i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
+
+            document.test.s1.
+            value="Количество правильных ответов: "+nok+"";
+
+        }
+        function showhide(obj){
+            if(obj == 'none') return 'inline';
+            else return 'none';
+        }
+
+    </script>
+    <form name="test">
+
+        <ol>
+            <li>
+                <font size="4" face="Lucida Sans Unicode">Где находится Австрия?</font><br />
+                <label>
+                    <input type="radio" value="0" name="Q1" /> Азия<br />
+                </label>
+                <label>
+                    <input type="radio" value="1" name="Q1" /> Европа<br />
+                </label>
+                <label>
+                    <input type="radio" value="2" name="Q1" /> Америка<br />
+                </label>
+                <label>
+                    <input type="radio" value="3" name="Q1" /> Австралия<br />
+                </label>
+
+                <br />
+            </li>
+            <li>
+                <font size="4" face="Lucida Sans Unicode">Первые упоминания относятся к:</font> <br />
+                <label>
+                    <input type="radio" value="0" name="Q2" /> 996<br />
+                </label>
+                <label>
+                    <input type="radio" value="1" name="Q2" /> 1001<br />
+                </label>
+                <label>
+                    <input type="radio" value="2" name="Q2" /> 878<br />
+                </label>
+                <label>
+                    <input type="radio" value="3" name="Q2" /> 656<br />
+                </label>
+                <br />
+            </li>
+            <li>
+                <font size="4" face="Lucida Sans Unicode">Столица Австрии:</font><br />
+                <label>
+                    <input type="radio" value="0" name="Q3" /> Москва<br />
+                </label>
+                <label>
+                    <input type="radio" value="1" name="Q3" /> Вена<br />
+                </label>
+                <label>
+                    <input type="radio" value="2" name="Q3" /> Лондон<br />
+                </label>
+                <label>
+                    <input type="radio" value="3" name="Q3" /> Эдинбург<br />
+                </label>
+                <br />
+            </li>
+        </ol>
+        <CENTER>
+            <P><TEXTAREA name="s1" rows="6" cols="90" readonly> </TEXTAREA> </P>
+            <INPUT onclick="check_me()" type="button" value="Показать результат" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <INPUT type="reset" value="Сбросить ответы" />
+        </CENTER>
+    </form>
+</body>
+</html>
