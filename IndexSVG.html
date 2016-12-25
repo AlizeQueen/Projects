@@ -1,0 +1,420 @@
+﻿<html>
+<head>
+    <meta charset="windows-1251" />
+    <title>Лес</title>
+</head>
+<body>
+    <script>
+        var i = 0;
+        function score() {
+            i = i + 1;
+            resEl = document.getElementById('res');
+            resEl.innerHTML = String(i);
+        }
+    </script>
+
+    <svg width="1000" height="700">
+
+
+        <rect width="1000" height="700" style="fill:rgb(15, 27, 83)"></rect>
+        <circle cx="800" cy="150" r="2" fill="white" />
+        <circle cx="100" cy="50" r="2" fill="white" />
+        <circle cx="600" cy="210" r="2" fill="white" />
+        <circle cx="400" cy="350" r="2" fill="white" />
+        <circle cx="200" cy="400" r="2" fill="white" />
+        <circle cx="300" cy="150" r="2" fill="white" />
+        <circle cx="700" cy="360" r="2" fill="white" />
+
+        <circle cx="100" cy="200" r="50" style="fill:rgb(255, 245, 110)" id="d13" onclick="score()"></circle>
+
+
+
+        <rect x="950" y="480" rx="5" width="100" height="25"
+              style="fill:rgb(74,74,74);stroke-width:5" id="A1" />
+        <rect x="955" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="A2" />
+        <rect x="965" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="A3" />
+        <rect x="980" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="A4" />
+        <rect x="990" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="A5" />
+        <rect x="1040" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="A6" />
+        <rect x="1030" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="A7" />
+        <rect x="1017" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="A8" />
+        <rect x="1007" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="A9" />
+
+
+
+        <animate xlink:href="#A1"
+                 attributeName="x"
+                 from="950"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#A3"
+                 attributeName="x"
+                 from="965"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#A4"
+                 attributeName="x"
+                 from="980"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#A5"
+                 attributeName="x"
+                 from="990"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#A6"
+                 attributeName="x"
+                 from="1040"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#A7"
+                 attributeName="x"
+                 from="1030"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#A8"
+                 attributeName="x"
+                 from="1017"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#A9"
+                 attributeName="x"
+                 from="1007"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#A2"
+                 attributeName="x"
+                 from="955"
+                 to="-100000"
+                 dur="400s"></animate>
+
+
+        <rect x="745" y="480" rx="5" width="100" height="25"
+              style="fill:rgb(74,74,74);stroke-width:5" id="B1" />
+        <rect x="750" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="B2" />
+        <rect x="760" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="B3" />
+        <rect x="775" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="B4" />
+        <rect x="785" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="B5" />
+        <rect x="800" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="B6" />
+        <rect x="810" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="B7" />
+        <rect x="825" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="B8" />
+        <rect x="835" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="B9" />
+
+        <animate xlink:href="#B2"
+                 attributeName="x"
+                 from="750"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#B3"
+                 attributeName="x"
+                 from="760"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#B4"
+                 attributeName="x"
+                 from="775"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#B5"
+                 attributeName="x"
+                 from="785"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#B6"
+                 attributeName="x"
+                 from="800"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#B7"
+                 attributeName="x"
+                 from="810"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#B8"
+                 attributeName="x"
+                 from="825"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#B9"
+                 attributeName="x"
+                 from="835"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#B1"
+                 attributeName="x"
+                 from="745"
+                 to="-100000"
+                 dur="400s"></animate>
+
+        <rect x="847" y="480" rx="5" width="100" height="25"
+              style="fill:rgb(74,74,74);stroke-width:5" id="C1" />
+        <rect x="852" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="C2" />
+        <rect x="862" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="C3" />
+        <rect x="877" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="C4" />
+        <rect x="887" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="C5" />
+        <rect x="902" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="C6" />
+        <rect x="912" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="C7" />
+        <rect x="927" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="C8" />
+        <rect x="937" y="486" rx="1" ry="1" width="5" height="5"
+              style="fill:rgb(255,255,0);stroke:rgb(255,251,130);stroke-width:0,1" id="C9" />
+
+
+
+        <animate xlink:href="#C1"
+                 attributeName="x"
+                 from="847"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#C2"
+                 attributeName="x"
+                 from="852"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#C3"
+                 attributeName="x"
+                 from="862"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#C4"
+                 attributeName="x"
+                 from="877"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#C5"
+                 attributeName="x"
+                 from="887"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#C6"
+                 attributeName="x"
+                 from="902"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#C7"
+                 attributeName="x"
+                 from="912"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#C8"
+                 attributeName="x"
+                 from="927"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#C9"
+                 attributeName="x"
+                 from="937"
+                 to="-100000"
+                 dur="400s"></animate>
+
+        <circle cx="859" cy="505" r="3" id="D1" />
+        <circle cx="870" cy="505" r="3" id="d2" />
+
+        <circle cx="770" cy="505" r="3" id="d3"></circle>
+        <circle cx="759" cy="505" r="3" id="d4"></circle>
+
+        <circle cx="825" cy="505" r="3" id="d5"></circle>
+        <circle cx="836" cy="505" r="3" id="d6"></circle>
+
+        <circle cx="936" cy="505" r="3" id="d7"></circle>
+        <circle cx="926" cy="505" r="3" id="d8"></circle>
+
+        <circle cx="965" cy="505" r="3" id="d9"></circle>
+        <circle cx="976" cy="505" r="3" id="d10"></circle>
+
+        <circle cx="1030" cy="505" r="3" id="d11"></circle>
+        <circle cx="1041" cy="505" r="3" id="d12"></circle>
+
+        <animate xlink:href="#D1"
+                 attributeName="cx"
+                 from="859"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#d2"
+                 attributeName="cx"
+                 from="870"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#d3"
+                 attributeName="cx"
+                 from="770"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#d4"
+                 attributeName="cx"
+                 from="759"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#d5"
+                 attributeName="cx"
+                 from="825"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#d6"
+                 attributeName="cx"
+                 from="836"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#d7"
+                 attributeName="cx"
+                 from="936"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#d8"
+                 attributeName="cx"
+                 from="926"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#d9"
+                 attributeName="cx"
+                 from="965"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#d10"
+                 attributeName="cx"
+                 from="976"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#d11"
+                 attributeName="cx"
+                 from="1030"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#d12"
+                 attributeName="cx"
+                 from="1041"
+                 to="-100000"
+                 dur="400s"></animate>
+        <animate xlink:href="#d13"
+                 attributeName="cx"
+                 from="-100"
+                 to="1100"
+                 dur="10s"
+                 repeatCount="20"></animate>
+
+        <polyline points="0,505 0,510 1000,510 1000,505" fill="rgb(0,0,0)"></polyline>
+        <polyline points="0,505 40,470 80,505 120,470 160,505 200,470 240,505 280,470 320,505 360,470 400,505 440,470 480,505" style="fill:none" stroke="rgb(92,92,92)" stroke-width="3"></polyline>
+        <polyline points="430,700 470,510 1000,510 1000,700" style="fill:rgb(25, 87, 0)" stroke-width="1"></polyline>
+        <polyline points="200,505 210,515 210,600 220,600 220,515 230,505"></polyline>
+        <polyline points="350,505 360,515 360,600 370,600 370,515 380,505"></polyline>
+        <polyline points="50,505 60,515 60,600 70,600 70,515 80,505"></polyline>
+        <polyline points="0,600 0,700 430,700 451,600" style="fill:rgb(163, 170, 68)"></polyline>
+
+
+        <rect x="898" y="547" width="5" height="10" fill="rgb(180,90,1)" />
+        <polygon points="900,515 910,525 890,525" fill="rgb(181,230,29)" />
+        <polygon points="900,517 912,530 888,530" fill="rgb(181,230,29)" />
+        <polygon points="900,519 914,535 886,535" fill="rgb(181,230,29)" />
+        <polygon points="900,521 916,540 884,540" fill="rgb(181,230,29)" />
+        <polygon points="900,523 918,545 882,545" fill="rgb(181,230,29)" />
+        <polygon points="900,525 920,550 880,550" fill="rgb(181,230,29)" />
+
+
+        <rect x="868" y="617" width="5" height="10" fill="rgb(180,90,1)" />
+        <polygon points="870,585 880,595 860,595" fill="rgb(181,230,29)" />
+        <polygon points="870,587 882,600 858,600" fill="rgb(181,230,29)" />
+        <polygon points="870,589 884,605 856,605" fill="rgb(181,230,29)" />
+        <polygon points="870,591 886,610 854,610" fill="rgb(181,230,29)" />
+        <polygon points="870,593 888,615 852,615" fill="rgb(181,230,29)" />
+        <polygon points="870,595 890,620 850,620" fill="rgb(181,230,29)" />
+
+
+        <rect x="798" y="547" width="5" height="10" fill="rgb(180,90,1)" />
+        <polygon points="800,515 810,525 790,525" fill="rgb(181,230,29)" />
+        <polygon points="800,517 812,530 788,530" fill="rgb(181,230,29)" />
+        <polygon points="800,519 814,535 786,535" fill="rgb(181,230,29)" />
+        <polygon points="800,521 816,540 784,540" fill="rgb(181,230,29)" />
+        <polygon points="800,523 818,545 782,545" fill="rgb(181,230,29)" />
+        <polygon points="800,525 820,550 780,550" fill="rgb(181,230,29)" />
+
+
+        <rect x="968" y="667" width="5" height="10" fill="rgb(180,90,1)" />
+        <polygon points="970,635 980,645 960,645" fill="rgb(181,230,29)" />
+        <polygon points="970,637 982,650 958,650" fill="rgb(181,230,29)" />
+        <polygon points="970,639 984,655 956,655" fill="rgb(181,230,29)" />
+        <polygon points="970,641 986,660 954,660" fill="rgb(181,230,29)" />
+        <polygon points="970,643 988,665 952,665" fill="rgb(181,230,29)" />
+        <polygon points="970,645 990,670 950,670" fill="rgb(181,230,29)" />
+
+        <rect x="768" y="657" width="5" height="10" fill="rgb(180,90,1)" />
+        <polygon points="770,625 780,635 760,635" fill="rgb(181,230,29)" />
+        <polygon points="770,627 782,640 758,640" fill="rgb(181,230,29)" />
+        <polygon points="770,629 784,645 756,645" fill="rgb(181,230,29)" />
+        <polygon points="770,631 786,650 754,650" fill="rgb(181,230,29)" />
+        <polygon points="770,633 788,655 752,655" fill="rgb(181,230,29)" />
+        <polygon points="770,635 790,660 750,660" fill="rgb(181,230,29)" />
+
+
+
+
+        <rect x="799" y="600" width="5" height="13" fill="rgb(100,50,1)" />
+        <circle cx="798" cy="597" r="8" fill="rgb(82,223,44)" />
+        <circle cx="805" cy="597" r="8" fill="rgb(82,223,44)" />
+        <circle cx="799" cy="590" r="7" fill="rgb(82,223,44)" />
+        <circle cx="804" cy="590" r="7" fill="rgb(82,223,44)" />
+        <circle cx="801.5" cy="585" r="6.5" fill="rgb(82,223,44)" />
+
+
+        <rect x="819" y="650" width="5" height="13" fill="rgb(100,50,1)" />
+        <circle cx="818" cy="647" r="8" fill="rgb(82,223,44)" />
+        <circle cx="825" cy="647" r="8" fill="rgb(82,223,44)" />
+        <circle cx="819" cy="640" r="7" fill="rgb(82,223,44)" />
+        <circle cx="824" cy="640" r="7" fill="rgb(82,223,44)" />
+        <circle cx="821.5" cy="635" r="6.5" fill="rgb(82,223,44)" />
+
+        <rect x="899" y="660" width="5" height="13" fill="rgb(100,50,1)" />
+        <circle cx="898" cy="657" r="8" fill="rgb(82,223,44)" />
+        <circle cx="905" cy="657" r="8" fill="rgb(82,223,44)" />
+        <circle cx="899" cy="650" r="7" fill="rgb(82,223,44)" />
+        <circle cx="904" cy="650" r="7" fill="rgb(82,223,44)" />
+        <circle cx="901.5" cy="645" r="6.5" fill="rgb(82,223,44)" />
+
+        <rect x="919" y="610" width="5" height="13" fill="rgb(100,50,1)" />
+        <circle cx="918" cy="607" r="8" fill="rgb(82,223,44)" />
+        <circle cx="925" cy="607" r="8" fill="rgb(82,223,44)" />
+        <circle cx="919" cy="600" r="7" fill="rgb(82,223,44)" />
+        <circle cx="924" cy="600" r="7" fill="rgb(82,223,44)" />
+        <circle cx="921.5" cy="595" r="6.5" fill="rgb(82,223,44)" />
+
+        <rect x="959" y="570" width="5" height="13" fill="rgb(100,50,1)" />
+        <circle cx="958" cy="567" r="8" fill="rgb(82,223,44)" />
+        <circle cx="965" cy="567" r="8" fill="rgb(82,223,44)" />
+        <circle cx="959" cy="560" r="7" fill="rgb(82,223,44)" />
+        <circle cx="964" cy="560" r="7" fill="rgb(82,223,44)" />
+        <circle cx="961.5" cy="555" r="6.5" fill="rgb(82,223,44)" />
+        <animate xlink:href="#d13"
+                 attributeName="fill"
+                 values="yellow;white;rgb(255, 245, 110)"
+                 begin="click"
+                 dur="0.2s"
+                 repeatCount="1" />
+
+
+
+    </svg>
+    <h1>Score: <span id="res"></span></h1>
+    <div>Click on the moon</div>
+</body>
+</html>
